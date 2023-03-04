@@ -228,6 +228,21 @@ body {
   /* z-index: -1; */
 }
 
+.slider__item > * {
+  animation: showSlide 100ms ease-in-out;
+}
+
+@keyframes showSlide {
+  0% {
+    opacity: 0;
+    transform: translate(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0%);
+  }
+}
+
 slider__item[closing] {
   opacity: 1;
 }
